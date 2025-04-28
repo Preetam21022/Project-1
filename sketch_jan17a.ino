@@ -21,7 +21,7 @@ void loop()
   digitalWrite(trig_pin,LOW);
 
   long duration = pulseIn(Echo_pin,HIGH);
-  float distance= duration*0.034/2; //unit of v cm/microsecond
+  float distance= duration*0.034/2; //unit of v(air)=cm/microsecond
   Serial.print(distance);//serial print line
   Serial.println(" cm");
   delay(100);
